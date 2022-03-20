@@ -1,0 +1,10 @@
+In Python you can read text from files.
+In Python you can create classes of objects with your own attributes and methods.
+In Python you can write functions and call them with different inputs.
+In Python you can save classes and functions in modules and import them for use in other files.
+In Python you can generate random integers or pick random elements from a list using the built-in library.
+In Python you can use a while loop to appropriately open and close a file_object for you.
+In Python you can write functions that accept an arbitrary number of arguments using *args and **kwargs.
+In Python you can pass a list to a function to modify the list outside of the function namespace.
+In Python you can prompt the user for input to alter the execution of your program.
+In Python you can store data as key-value pairs in a dictionary, otherwise known as a hashtable.
