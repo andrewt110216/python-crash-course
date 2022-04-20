@@ -2,7 +2,9 @@
 # Exercise 15-1 and 2
 # 3/25/2022
 
+# 15.1
 # Plot the first 5,000 cubic numbers
+# 15.2
 # Apply a colormap to your cubes plot
 
 import matplotlib.pyplot as plt
