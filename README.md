@@ -3,7 +3,7 @@
 'Python Crash Course: A Hands-On, Project-Based Introduction to Programming', 2nd Edition
 By Eric Matthes
 
-[Cover](cover_image.jpeg)
+![Cover](cover_image.jpeg)
 
 This repo includes the files I created while working through this textbook, organized by chapter, including
 chapter exercises and any required data files, code samples from the readings, and other practice files.
