@@ -45,5 +45,5 @@ y_axis_config = {'title': 'Frequency of Result'}
 my_layout = Layout(title=f'Results of rolling two 8-sided die {rolls:,} times',
                     title_xanchor='left',
                     xaxis=x_axis_config, yaxis=y_axis_config)
-directory = 'chapters/15-project2-generating-data'
+directory = 'chapters/15-project2-generating-data/'
 offline.plot({'data': data, 'layout': my_layout}, filename=directory+'ex_15_6.html')
