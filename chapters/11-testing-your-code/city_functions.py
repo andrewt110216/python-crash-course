@@ -1,10 +1,9 @@
 # Python Crash Course
-# Exercises 11-1
-# 03/24/2022
-# Andrew Tracey
+# Exercises 11-1 & 11-2
+# March 24, 2022
 
-# 11-1
-# 11-2
+# 11-1 City, Country
+# 11-2 Population
 # Modify your function so it requires a third parameter, population.
 # Change the parameter to be optional.
 

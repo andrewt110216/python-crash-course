@@ -1,8 +1,8 @@
 # Python Crash Course
 # Exercise 15-10
-# 04/06/2022
+# April 6, 2022
 
-# 15-10
+# Practicing with Both Libraries
 # Practice using Matplotlib and Plotly libraries
 # Part 1
 # Try using Matplotlib (instead of Plotly) to visualize die rolling

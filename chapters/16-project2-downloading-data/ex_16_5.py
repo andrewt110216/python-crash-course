@@ -1,6 +1,6 @@
 # Python Crash Course
-# Exercises 16-5
-# 05/17/2022
+# Exercise 16-5
+# May 17, 2022
 
 # 16-5 Explore
 # Generate a few more visualizations that examine any other weather aspect
@@ -29,8 +29,9 @@ santa_monica = City('Santa Monica', 'USW00093197')
 locations = [chicago, santa_monica]
 
 # Extract data from csv file
+directory = 'chapters/16-project2-downloading-data/'
 filepath = 'data/chicago_santa_monica_2021-2022.csv'
-with open(filepath) as f:
+with open(directory + filepath) as f:
     # Initialize reader and extract indexes from header row
     reader = csv.reader(f)
     header_row = next(reader)
@@ -72,7 +73,7 @@ with open(filepath) as f:
         try:
             date = datetime.strptime(row[date_index], '%m/%d/%y')
         except ValueError:
-            print(f"Unable to read date ({row[date_index]}) for {loc.name}. Quitting application.")
+            print(f"Unable to read date ({row[date_index]}) for {loc.name}.")
             quit()
 
         # Try to extract data points from row
@@ -120,10 +121,12 @@ for index, loc in enumerate(locations):
                     edgecolor=colors[index],)
 
 # Plot 'freezing' line
-ax.plot(common_dates, [32 for _ in common_dates], c='blue', label='Freezing', linewidth=0.75)
+ax.plot(common_dates, [32 for _ in common_dates],
+        c='blue', label='Freezing', linewidth=0.75)
 
 # Format plot
-ax.set_title('Comparing Temperatures & Snow Depth (2021 and Spring 2022)', fontsize=16)
+ax.set_title('Comparing Temperatures & Snow Depth (2021 and Spring 2022)',
+            fontsize=16)
 ax.set_xlabel('', fontsize=14)
 fig.autofmt_xdate()
 ax.set_ylabel('Temperature (F)', fontsize=14)
@@ -144,4 +147,5 @@ upper_y_tick = round(max_snow_depth, -1) + 10
 ax2.set_yticks(np.arange(0, upper_y_tick, 10))
 
 ax.legend()
+plt.savefig(directory + 'chicago_vs_santamonica_snow.png')
 plt.show()

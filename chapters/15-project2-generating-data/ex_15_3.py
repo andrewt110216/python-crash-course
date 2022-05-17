@@ -1,6 +1,6 @@
 # Python Crash Course
-# Chapter 15 Exercise 15-3
-# 04/04/2022
+# Exercise 15-3
+# April 4, 2022
 
 """Use Matplotlib to visualize a Random Walk on an x-y scatter plot"""
 

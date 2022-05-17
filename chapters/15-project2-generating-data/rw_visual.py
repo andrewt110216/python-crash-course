@@ -1,6 +1,6 @@
 # Python Crash Course
-# Chapter 15 (Page 317-322)
-# 04/04/2022
+# Chapter 15 - Pages 317-322
+# April 4, 2022
 
 """Use Matplotlib to visualize a Random Walk on an x-y scatter plot"""
 

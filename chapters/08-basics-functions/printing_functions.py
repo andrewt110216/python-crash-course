@@ -1,7 +1,6 @@
 # Python Crash Course
-# Exercises 8-15 - Separate Module for Printing Functions
-# 03/10/2022
-# Andrew Tracey
+# Exercise 8-15 - Separate Module for Printing Functions
+# March 10, 2022
 
 def print_models(unprinted_designs, completed_models):
 	"""

@@ -1,7 +1,8 @@
 # Python Crash Course
 # Exercise 15-9
-# 04/06/2022
+# April 6, 2022
 
+# Die Comprehension
 # Starting with one of the prior exercises from this chapter (15-8), try
 #  re-writing one or both of the loops in this programs as list comprehensions.
 
@@ -39,4 +40,4 @@ my_layout = Layout(title=f'Results of rolling two 8-sided die {rolls:,} times',
                     title_xanchor='left',
                     xaxis=x_axis_config, yaxis=y_axis_config)
 offline.plot({'data': data, 'layout': my_layout},
-    filename='ex_15_8_V2.html')
+    filename='chapters/15-project2-generating-data/ex_15_8_V2.html')

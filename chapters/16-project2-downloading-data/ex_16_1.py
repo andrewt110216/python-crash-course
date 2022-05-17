@@ -1,17 +1,23 @@
 # Python Crash Course
 # Exercise 16-1
-# 05/16/2022
+# May 16, 2022
 
-# Chart the 2018 daily rainfall amounts of Sitka, AL and Death Valley
+# Sitka Rainfall
+# Sitka is in a temperate rainforest, so it gets a fair amount of rainfall.
+# In the data file sitka_weather_2018_simple.csv is a header called PRCP,
+# which represents daily rainfall amounts. Make a visualization focusing on the
+# data in this column. You can repeat this exercise for Death Valley.
 
 import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-filenames = ['data/sitka_weather_2018_simple.csv', 'data/death_valley_2018_simple.csv']
+directory = 'chapters/16-project2-downloading-data/data/'
+filenames = ['sitka_weather_2018_simple.csv',
+            'death_valley_2018_simple.csv']
 data = []
 for filename in filenames:
-    with open(filename) as f:
+    with open(directory + filename) as f:
         reader = csv.reader(f)
         header_row = next(reader)
 

@@ -1,7 +1,6 @@
 # Python Crash Course
-# word_count.py (Page 199)
-# 03/21/2022
-# Andrew Tracey
+# Chapter 10 - Page 199
+# March 21, 2022
 
 # Count the number of words in a file
 
@@ -17,6 +16,7 @@ def count_words(filename):
 		num_words = len(words)
 		print(f"There are approximately {num_words:,} in {filename}.")
 
+directory = 'chapters/10-files-and-exceptions/'
 filenames = [
 	'alice.txt',
 	'siddhartha.txt',
@@ -25,4 +25,4 @@ filenames = [
 	]
 	
 for filename in filenames:
-	count_words(filename)
+	count_words(directory + filename)

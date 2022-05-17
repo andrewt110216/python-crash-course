@@ -1,12 +1,11 @@
 # Python Crash Course
-# alice.py (Page 199)
-# 03/21/2022
-# Andrew Tracey
+# Chapter 10 - Page 199
+# March 21, 2022
 
 # Approximate the number of words in the book Alice in Wonderland
 # Text file of book contents available from Project Gutenburg online
 
-filename = 'alice.txt'
+filename = 'chapters/10-files-and-exceptions/alice.txt'
 bookname = 'Alice In Wonderland'
 
 try:

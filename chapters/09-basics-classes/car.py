@@ -1,7 +1,6 @@
 # Python Crash Course
 # car.py (Pages 174-175)
-# 03/14/2022
-# Andrew Tracey
+# March 14, 2022
 
 # Save a class as it's own file or module.
 

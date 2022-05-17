@@ -1,7 +1,6 @@
 # Python Crash Course
-# admin.py (Exercises 9-12)
-# 03/14/2022
-# Andrew Tracey
+# Exercise 9-12 (admin.py)
+# March 14, 2022
 
 # Store the Admin and Privilege classes in their own separate module.
 

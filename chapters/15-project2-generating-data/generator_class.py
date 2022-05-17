@@ -1,6 +1,6 @@
 # Python Crash Course
-# Chapter 16 (Page 334)
-# 04/07/2022
+# Chapter 16 - Page 334
+# April 7, 2022
 
 # The csv module appears to just use built-in functions for file-objects (e.g.
 #  read and readlines) to turn the results into a generator instead of a list.

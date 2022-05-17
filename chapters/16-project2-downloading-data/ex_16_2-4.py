@@ -1,15 +1,15 @@
 # Python Crash Course
 # Exercises 16-2, 3, and 4
-# 05/16/2022
+# May 16, 2022
 
-# 16-2
+# 16-2 Sitka-Death Valley Comparison
 # Compare the daily high-low temperature ranges of Sitka and Death Valley,
 # making sure that the data aligns with the appropriate dates
 
-# 16-3
+# 16-3 San Francisco
 # Add San Francisco to the plot for comparison. Download its data first.
 
-# 16-4
+# 16-4 Automatic Indexes
 # Instead of hard coding the indexes used for date, high, low, etc., use the
 # header row to find those indexes for each location
 
@@ -17,8 +17,9 @@ import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 
+
 class Location:
-    def __init__(self, name, filepath, date_format, data={}):
+    def __init__(self, name, filepath, date_format):
         self.name = name
         self.filepath = filepath
         self.date_format = date_format
@@ -29,6 +30,7 @@ class Location:
         return self.name
 
 # Create location objects, and load them into list of locations to be included in visual
+directory = 'chapters/16-project2-downloading-data/'
 sitka = Location('Sitka, AK', 'data/sitka_weather_2018_simple.csv', '%Y-%m-%d')
 death_valley = Location('Death Valley, CA', 'data/death_valley_2018_simple.csv', '%Y-%m-%d')
 san_francisco = Location('San Francisco, CA', 'data/san_francisco_weather_2018.csv', '%m/%d/%y')
@@ -37,7 +39,7 @@ locations = [san_francisco, santa_monica]
 
 # Extract data from csv file
 for loc in locations:
-    with open(loc.filepath) as f:
+    with open(directory + loc.filepath) as f:
         # Initialize reader and extract indexes from header row
         reader = csv.reader(f)
         header_row = next(reader)

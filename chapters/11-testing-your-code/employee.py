@@ -1,14 +1,11 @@
 # Python Crash Course
-# Exercises 11-3
-# 03/24/2022
-# Andrew Tracey
+# Exercise 11-3
+# March 24, 2022
 
-# 11-3
+# 11-3 Employee
 # Write a class called Employee, with attributes: first name, last name, and
 #  annual salary, and a method give_raise with an optional raise amount that 
 #  defaults to $5,000.
-
-
 
 class Employee():
 	"""Simple representation of a company employee."""

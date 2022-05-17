@@ -1,7 +1,8 @@
 # Python Crash Course
 # Exercise 15-8
-# 04/06/2022
+# April 6, 2022
 
+# Multiplication
 # Create a simulation showing what happens when you roll two 6-sided dice,
 #  and the result is the product of the two rolls
 
@@ -48,4 +49,4 @@ my_layout = Layout(title=f'Results of rolling two 8-sided die {rolls:,} times',
                     title_xanchor='left',
                     xaxis=x_axis_config, yaxis=y_axis_config)
 offline.plot({'data': data, 'layout': my_layout},
-    filename='ex_15_8.html')
+    filename='chapters/15-project2-generating-data/ex_15_8.html')

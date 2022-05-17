@@ -1,3 +1,7 @@
+# Python Crash Course
+# Chapter 11 - Page 210
+# March 21, 2022
+
 from name_function import get_formatted_name
 
 print("Enter 'q' at any time to quit.")

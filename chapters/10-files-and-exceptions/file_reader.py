@@ -1,14 +1,13 @@
 # Python Crash Course
-# file_reader.py (Page 184)
-# 3/14/2022
-# Andrew Tracey
+# Chapter 10 - Page 184
+# March 14, 2022
 
 # Practice reading in text from a file
 
-with open('pi_digits.txt') as file_object:
+with open('chapters/10-files-and-exceptions/pi_digits.txt') as file_object:
 	contents = file_object.read()
 
-filename = 'pi_million_digits.txt'
+filename = 'chapters/10-files-and-exceptions/pi_million_digits.txt'
 pi_string = ''
 with open(filename) as file_object:
 	for line in file_object:

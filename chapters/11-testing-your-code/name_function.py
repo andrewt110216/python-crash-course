@@ -1,3 +1,7 @@
+# Python Crash Course
+# Chapter 11 - Page 210-215
+# March 21, 2022
+
 def get_formatted_name(first, last, middle=None):
 	"""Generate a neatly formatted full name."""
 	if middle:

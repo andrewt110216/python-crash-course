@@ -1,9 +1,8 @@
 # Python Crash Course
-# Exercises 11-3
-# 03/24/2022
-# Andrew Tracey
+# Exercise 11-3
+# March 24, 2022
 
-# 11-3
+# 11-3 Employee
 # Write a test case for the Employee class.
 # Use the setUp() method to create an instance of the class.
 # Write tests for the give_raise() method, both with the default value,

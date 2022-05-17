@@ -1,6 +1,6 @@
 # Python Crash Course
-# Chapter 15 (Pages 316-318)
-# 04/04/2022
+# Chapter 15 - Pages 316-318
+# April 4, 2022
 
 """Set of classes to model a random walk"""
 

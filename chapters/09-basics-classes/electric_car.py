@@ -1,7 +1,6 @@
 # Python Crash Course
 # electric_car.py (Page 178)
-# 03/14/2022
-# Andrew Tracey
+# March 14, 2022
 
 # Separate the classes related to electric cars into separate modules.
 
@@ -47,4 +46,3 @@ class ElectricCar(Car):
 		"""
 		super().__init__(make, model, year)
 		self.battery = Battery()
-

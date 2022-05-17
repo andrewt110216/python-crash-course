@@ -1,6 +1,6 @@
 # Python Crash Course
-# Exercise 15-1 and 2
-# 3/25/2022
+# Exercises 15-1 & 15-2
+# March 25, 2022
 
 # 15.1
 # Plot the first 5,000 cubic numbers
@@ -26,5 +26,5 @@ ax.set_ylabel("Cube of Value", fontsize=12)
 ax.axis([0, 5_000*1.1, 0, 5_000**3*1.1])
 
 # Save plot to file as PNG
-plt.savefig('cubes_plot.png')
+plt.savefig('chapters/15-project2-generating-data/cubes_plot.png')
 plt.show()

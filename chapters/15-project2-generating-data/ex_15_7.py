@@ -1,7 +1,8 @@
 # Python Crash Course
 # Exercise 15-7
-# 04/06/2022
+# April 6, 2022
 
+# Three Dice
 # Create a simulation showing what happens when you roll three 6-sided dice
 
 from plotly.graph_objs import Bar, Layout
@@ -45,4 +46,5 @@ y_axis_config = {'title': 'Frequency of Result'}
 my_layout = Layout(
     title=f'Results of rolling three 6-sided dice {rolls:,} times',
     title_xanchor='left', xaxis=x_axis_config, yaxis=y_axis_config)
-offline.plot({'data': data, 'layout': my_layout}, filename='ex_15_7.html')
+offline.plot({'data': data, 'layout': my_layout},
+            filename='chapters/15-project2-generating-data/ex_15_7.html')

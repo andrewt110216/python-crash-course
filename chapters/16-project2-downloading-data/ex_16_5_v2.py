@@ -1,6 +1,6 @@
 # Python Crash Course
 # Exercises 16-5
-# 05/17/2022
+# May 17, 2022
 
 # 16-5 Explore
 # Generate a few more visualizations that examine any other weather aspect
@@ -12,6 +12,7 @@ import csv
 import matplotlib.pyplot as plt
 from datetime import datetime
 import numpy as np
+
 
 class City:
     def __init__(self, name, station_ID):
@@ -29,8 +30,9 @@ santa_monica = City('Santa Monica', 'USW00093197')
 locations = [chicago, santa_monica]
 
 # Extract data from csv file
+directory = 'chapters/16-project2-downloading-data/'
 filepath = 'data/chicago_santa_monica_2021-2022.csv'
-with open(filepath) as f:
+with open(directory + filepath) as f:
     # Initialize reader and extract indexes from header row
     reader = csv.reader(f)
     header_row = next(reader)
@@ -72,7 +74,7 @@ with open(filepath) as f:
         try:
             date = datetime.strptime(row[date_index], '%m/%d/%y')
         except ValueError:
-            print(f"Unable to read date ({row[date_index]}) for {loc.name}. Quitting application.")
+            print(f"Unable to read date ({row[date_index]}) for {loc.name}.")
             quit()
 
         # Try to extract data points from row
@@ -81,10 +83,11 @@ with open(filepath) as f:
             low = int(row[low_index])
             precipitation = float(row[prcp_index] or 0)
         except ValueError:
-            print(f"Missing data for {date} in {loc}. This date will be excluded.")
+            print(f"Missing data for {date} in {loc}. This date will be skipped.")
         else:
-            loc.dates[date] = {'high': high, 'low': low, 'precipitation': precipitation}
-
+            loc.dates[date] = {'high': high,
+                                'low': low,
+                                'precipitation': precipitation}
 
 # Identify dates for which all locations have complete data
 date_sets = [set(chicago.dates.keys()), set(santa_monica.dates.keys())]
@@ -115,10 +118,13 @@ for index, loc in enumerate(locations):
     ax2.bar(common_dates, precipitations, color=colors[index], linewidth=1.25)
 
 # Plot 'freezing' line
-ax.plot(common_dates, [32 for _ in common_dates], c='blue', label='Freezing', linewidth=0.75)
+ax.plot(common_dates, [32 for _ in common_dates],
+        c='blue', label='Freezing', linewidth=0.75)
 
 # Format plot
-ax.set_title('Chicago vs. Santa Monica - Comparing Temperatures & Precipitation (2021 thru Apr 2022)', fontsize=16)
+title = 'Chicago vs. Santa Monica - Comparing Temperatures & Precipitation ' \
+        '(2021 thru Apr 2022)'
+ax.set_title(title, fontsize=12)
 ax.set_xlabel('', fontsize=14)
 fig.autofmt_xdate()
 ax.set_ylabel('Temperature (F)', fontsize=14)
@@ -139,4 +145,5 @@ upper_y_tick = round(max_precipitation, 1) + 1
 ax2.set_yticks(np.arange(0, upper_y_tick, 1))
 
 ax.legend()
+plt.savefig(directory + 'chicago_vs_santamonica_rain.png')
 plt.show()
