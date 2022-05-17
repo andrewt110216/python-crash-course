@@ -17,8 +17,10 @@ class TestEmployee(unittest.TestCase):
 
 	def setUp(self):
 		"""Create an employee object for use in all tests"""
-		args = ['lisa', 'grigaliunas', 96000]
-		self.lisa = Employee(*args)
+		self.lisa = Employee(
+			'lisa',
+			'grigaliunas',
+			96000)
 
 	def test_give_default_raise(self):
 		"""Test that the default raise is working properly."""
