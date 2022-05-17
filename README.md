@@ -9,8 +9,8 @@ I highly recommend this textbook to anyone who is beginning their programming jo
 had years of experience programming with VBA, this was one of the first resources I used as I prepared for
 a career transition from financial planning to software engineering, using Python as my primary language for learning.
 
-Not only did it provide me with fairly comprehensive and interactive overview of the basic syntax and features
-of python, but it covered many practical topics and use cases, including reading and writing date to file, JSON,
+Not only did it provide me with a fairly comprehensive and interactive overview of the basic syntax and features
+of Python, but it covered many practical topics and use cases, including reading and writing date to file, JSON,
 interacting with API's, data visualization libaries like plotly and matplotlib, creating and managing web
 applications using Django and Heroku, and much more.
 
