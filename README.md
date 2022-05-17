@@ -1,9 +1,6 @@
-# Working Files - The Python Crash Course Textbook
+# My Working Files for the Python Crash Course Textbook
 
-'Python Crash Course: A Hands-On, Project-Based Introduction to Programming', 2nd Edition
-By Eric Matthes
-
-![Cover](cover_image.jpeg)
+'Python Crash Course: A Hands-On, Project-Based Introduction to Programming', 2nd Edition. Eric Matthes.
 
 This repo includes the files I created while working through this textbook, organized by chapter, including
 chapter exercises and any required data files, code samples from the readings, and other practice files.
@@ -17,4 +14,6 @@ of python, but it covered many practical topics and use cases, including reading
 interacting with API's, data visualization libaries like plotly and matplotlib, creating and managing web
 applications using Django and Heroku, and much more.
 
-You can find the textbook on Amazon with <a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280">this link</a>.
+You can find the textbook on Amazon with <a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280" target="_blank">this link</a>.
+
+<a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280" target="_blank"><img src="cover_image.jpeg" width="250" heigh="250"></a>
