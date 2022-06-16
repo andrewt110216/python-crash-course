@@ -18,7 +18,7 @@ class TestEmployee(unittest.TestCase):
 		"""Create an employee object for use in all tests"""
 		self.lisa = Employee(
 			'lisa',
-			'grigaliunas',
+			'cappucino',
 			96000)
 
 	def test_give_default_raise(self):

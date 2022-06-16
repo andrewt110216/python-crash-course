@@ -36,7 +36,7 @@ andrew = User("andrew", "tracey", age=30, location="Santa Monica")
 andrew.greet_user()
 andrew.describe_user()
 
-lisa = User("lisa", "grigaliunas", age=29, location="Santa Monica")
+lisa = User("lisa", "cappucino", age=29, location="Santa Monica")
 lisa.greet_user()
 lisa.describe_user()
 
